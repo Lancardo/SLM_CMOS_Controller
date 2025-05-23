@@ -1,3 +1,11 @@
-PyQt6
-Pillow
-pyinstaller 
+# Python GUI应用程序依赖项
+PyQt6>=6.0.0
+Pillow>=8.0.0
+
+# 本地相机SDK包 (位于根目录)
+# 注意：gxipy是本地包，位于项目根目录的gxipy文件夹中
+# 如果需要安装，请使用: pip install -e ./gxipy
+# 或者将gxipy文件夹添加到Python路径中
+
+# 标准库依赖项（无需安装）:
+# sys, os, time, datetime - Python标准库 
