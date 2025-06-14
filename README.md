@@ -1,99 +1,109 @@
-# 图片显示器应用程序
+# Image Viewer Application
 
-一个基于PyQt6的图片显示器应用程序，支持单张图片显示、幻灯片播放和相机控制功能。
+A PyQt6-based image viewer application that supports single image display, slideshow playback, and camera control.
 
-## 功能特性
+## Features
 
-- 单张图片全屏显示
-- 幻灯片播放（支持自定义间隔时间）
-- 多显示器支持
-- 相机控制（基于gxipy SDK）
-- 图片分辨率检查
-- 播放进度显示
+* Full-screen single image display
+* Slideshow playback (customizable interval time)
+* Multi-monitor support
+* Camera control (based on gxipy SDK)
+* Image resolution checking
+* Playback progress display
 
-## 安装要求
+## Installation Requirements
 
-### Python版本
-- Python 3.7 或更高版本
+### Python Version
 
-### 依赖项安装
+* Python 3.7 or above
 
-1. 安装基本依赖项：
+### Dependency Installation
+
+1. Install basic dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-2. 安装本地gxipy包（相机SDK）：
+2. Install the local gxipy package (camera SDK):
+
 ```bash
-# 方法1：以开发模式安装
+# Method 1: Install in development mode
 pip install -e ./gxipy
 
-# 方法2：如果上述方法不工作，可以将gxipy添加到Python路径
-# 在运行程序前，确保gxipy文件夹在项目根目录中
+# Method 2: If the above does not work, you can add gxipy to the Python path
+# Ensure the gxipy folder is in the project root directory before running the program
 ```
 
-### 系统要求
+### System Requirements
 
-- Windows 10/11（推荐）
-- 支持多显示器设置
-- 如果使用相机功能，需要兼容的相机设备
+* Windows 10/11 (recommended)
+* Multi-monitor setup support
+* Compatible camera device if using camera features
 
-## 使用说明
+## Usage Instructions
 
-### 运行程序
+### Run the Program
+
 ```bash
 python main.py
 ```
 
-### 基本操作
+### Basic Operations
 
-1. **单张图片显示**：
-   - 点击"选择单张图片"按钮
-   - 选择要显示的图片文件
-   - 选择目标显示器
-   - 点击"显示单张图片"
+1. **Single Image Display**:
 
-2. **幻灯片播放**：
-   - 点击"选择图片文件夹"按钮
-   - 选择包含图片的文件夹（图片需要用数字命名，从0开始）
-   - 设置播放间隔时间（毫秒）
-   - 选择目标显示器
-   - 点击"开始幻灯片播放"
+   * Click the "Select Single Image" button
+   * Choose the image file to display
+   * Select the target monitor
+   * Click "Display Single Image"
 
-3. **相机控制**：
-   - 勾选"启用相机"复选框
-   - 设置曝光时间
-   - 在播放过程中会自动拍摄照片
+2. **Slideshow Playback**:
 
-### 重要提示
+   * Click the "Select Image Folder" button
+   * Choose the folder containing the images (images must be numerically named starting from 0)
+   * Set the playback interval (in milliseconds)
+   * Select the target monitor
+   * Click "Start Slideshow"
 
-- **SLM设置**：使用前请将SLM设置为拓展屏幕，分辨率1080p，缩放100%
-- **图片命名**：选择文件夹时，图片必须使用数字命名（从0开始），将按数字从小到大顺序播放
-- **分辨率匹配**：程序会检查图片分辨率是否与目标显示器匹配
+3. **Camera Control**:
 
-### 快捷键
+   * Check the "Enable Camera" checkbox
+   * Set the exposure time
+   * The camera will automatically capture photos during playback
 
-- **ESC键**：退出全屏显示
+### Important Notes
 
-## 故障排除
+* **SLM Settings**: Before use, set the SLM as an extended screen with 1080p resolution and 100% scaling
+* **Image Naming**: When selecting a folder, images must be numerically named (starting from 0), and they will be played in ascending order
+* **Resolution Matching**: The program will check if the image resolution matches the target monitor
 
-1. **相机连接失败**：
-   - 检查相机是否正确连接
-   - 确认相机驱动已安装
-   - 检查gxipy SDK是否正确安装
+### Shortcuts
 
-2. **图片显示异常**：
-   - 检查图片文件格式是否支持
-   - 确认图片分辨率与显示器匹配
+* **ESC Key**: Exit full-screen display
 
-3. **多显示器问题**：
-   - 确认显示器设置正确
-   - 检查显示器扩展模式设置
+## Troubleshooting
 
-## 开发者
+1. **Camera Connection Failed**:
+
+   * Check if the camera is properly connected
+   * Ensure the camera driver is installed
+   * Verify that the gxipy SDK is correctly installed
+
+2. **Image Display Issues**:
+
+   * Check if the image file format is supported
+   * Ensure the image resolution matches the display
+
+3. **Multi-Monitor Issues**:
+
+   * Ensure monitor settings are correct
+   * Check extended display mode settings
+
+## Developer
 
 @RuiboLan
 
-## 许可证
+## License
 
-本项目仅供学习和研究使用。 
+This project is for learning and research purposes only. Feel free to ask!
