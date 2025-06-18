@@ -1,6 +1,6 @@
 # Image Viewer Application
 
-A PyQt6-based image viewer application that supports single image display, slideshow playback, and camera control.
+A Python-based SLM and CMOS Controller that supports single and multi CGH display, slideshow playback, and camera control.
 
 ## Features
 
