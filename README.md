@@ -106,4 +106,9 @@ python main.py
 
 ## License
 
-This project is for learning and research purposes only. Feel free to ask!
+This project is licensed under the **Academic Research License (ARL)** — for **non-commercial research and educational use only**.  
+If you use this project in your research, please cite:
+
+> R. Lan et al., “Design and optimization of optical fibers for orbital angular momentum transmission using machine learning and optimization algorithms,” *Optics Express*, vol. 32, no. 19, pp. 32115–32130, 2024.  
+[https://doi.org/10.1364/OE.571745](https://doi.org/10.1364/OE.571745)
+
